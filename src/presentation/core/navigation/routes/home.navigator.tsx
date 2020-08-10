@@ -3,6 +3,7 @@ import {createNativeStackNavigator} from "react-native-screens/native-stack";
 import {DriverScreen} from "screens/driver/driver.screen";
 import {StandingsScreen} from "screens/standings/standings.screen";
 import {RaceScreen} from "screens/race/race.screen";
+import {Platform} from "react-native";
 
 const Stack = createNativeStackNavigator();
 
@@ -16,27 +17,35 @@ export type HomeStackParamList = {
     }
 };
 
+const baseOptions = {
+    ...Platform.select({
+        ios: {
+            headerLargeTitle: Platform.OS === 'android',
+        }
+    }),
+}
+
 export const HomeNavigator = (): React.ReactElement => (
     <Stack.Navigator>
         <Stack.Screen
             name="Home"
             options={{
+                ...baseOptions,
                 title: 'Турнирная таблица',
-                headerLargeTitle: true,
             }}
             component={StandingsScreen}/>
         <Stack.Screen
             name="Driver"
             options={{
+                ...baseOptions,
                 title: 'Пилот',
-                headerLargeTitle: true,
             }}
             component={DriverScreen}/>
         <Stack.Screen
             name="Races"
             options={{
+                ...baseOptions,
                 title: 'Результаты гонок',
-                headerLargeTitle: true,
             }}
             component={RaceScreen}/>
     </Stack.Navigator>

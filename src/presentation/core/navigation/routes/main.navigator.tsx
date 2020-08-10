@@ -12,7 +12,6 @@ export const MainNavigator = (): React.ReactElement => {
             initialRouteName={initialTabRoute}
             screenOptions={{
                 headerShown: false,
-
             }}
         >
             <Stack.Screen name={'Home'} component={HomeNavigator}/>
