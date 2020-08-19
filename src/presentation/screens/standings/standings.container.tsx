@@ -1,7 +1,7 @@
 import {StyleSheet, View} from "react-native";
 import React, {useEffect} from "react";
 import {useDispatch} from "react-redux";
-import {fetchStandings} from "appliction/standings.application";
+import {fetchStandings} from "application/standings.application";
 import {StandingsTable} from "screens/standings/extra/standings.table";
 import {CommonStyle} from "core/theme/styles/common.styles";
 import {DriverModel} from "models/driver.model";

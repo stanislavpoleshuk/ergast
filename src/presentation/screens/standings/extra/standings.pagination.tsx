@@ -4,7 +4,7 @@ import {IAppState} from "infrastructure/store";
 import {useSelector, useDispatch} from "react-redux";
 import {PagePaginationModel} from "models/pagination.model";
 import {ButtonPagination} from "components/common/pagination/button-pagination.component";
-import {fetchStandings} from "appliction/standings.application";
+import {fetchStandings} from "application/standings.application";
 
 type Props = {}
 

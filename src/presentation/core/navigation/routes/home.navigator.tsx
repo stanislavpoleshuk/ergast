@@ -18,11 +18,7 @@ export type HomeStackParamList = {
 };
 
 const baseOptions = {
-    ...Platform.select({
-        ios: {
-            headerLargeTitle: Platform.OS === 'android',
-        }
-    }),
+    headerLargeTitle: true
 }
 
 export const HomeNavigator = (): React.ReactElement => (

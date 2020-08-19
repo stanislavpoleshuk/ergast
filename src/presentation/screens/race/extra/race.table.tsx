@@ -49,7 +49,6 @@ export class RaceTableContainer extends React.Component<Props, State> {
     }
 
     render(): React.ReactElement {
-
         return (
             <View style={styles.content}>
                 {this.tableRender()}

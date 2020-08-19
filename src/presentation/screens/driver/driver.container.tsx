@@ -2,7 +2,7 @@ import {Button, StyleSheet, Text, View} from "react-native";
 import React, {useCallback, useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {CommonStyle} from "core/theme/styles/common.styles";
-import {fetchDriverById} from "appliction/drivers.application";
+import {fetchDriverById} from "application/drivers.application";
 import {IAppState} from "infrastructure/store";
 
 type Props = {

@@ -1,5 +1,5 @@
 import {PaginationModel} from "models/pagination.model";
-import {DriverStandingModel, StandingsListModel} from "models/standing.model";
+import {DriverStandingModel} from "models/standing.model";
 
 export type StandingsState = {
     isLoading: boolean;

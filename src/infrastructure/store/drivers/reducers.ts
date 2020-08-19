@@ -19,8 +19,7 @@ const initial: DriversState = {
     races: []
 };
 
-export function
-DriversReducer(
+export function DriversReducer(
     state = initial,
     action: DriversTypes,
 ): DriversState {
@@ -70,7 +69,6 @@ DriversReducer(
                 isLoading: false,
             };
         }
-
 
         case FETCH_DRIVER_RACES_REQUEST: {
             return {

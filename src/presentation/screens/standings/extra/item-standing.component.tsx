@@ -32,7 +32,6 @@ export const ItemStanding: React.FC<Props> =
                     }
                 }
             }
-
         }
 
         const Position = (): React.ReactElement => {

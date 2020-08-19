@@ -2,7 +2,7 @@ import {StyleSheet, View} from "react-native";
 import React, {useEffect} from "react";
 import {useDispatch} from "react-redux";
 import {CommonStyle} from "core/theme/styles/common.styles";
-import {fetchDriverRaces} from "appliction/drivers.application";
+import {fetchDriverRaces} from "application/drivers.application";
 import {RaceTable} from "screens/race/extra/race.table";
 
 type Props = {
